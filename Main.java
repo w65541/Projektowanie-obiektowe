@@ -110,6 +110,59 @@ public class Main {
         if(delta==0) System.out.println((-1*b)/(2*a));
         if(delta<0)   System.out.println("Nie ma miejsc zerowych");
     }
-    //za
+    //zad 2
+    public static double a(double x){
+        if(x>0) return 2*x;
+        if(x==0) return 0;
+        return -3*x;
+    }
+    public static double b(double x){
+        if(x>=1) return x*x;
+        return x;
+    }
+    public static double c(double x){
+        if(x>2) return 2+x;
+        if(x==2) return 8;
+        return x-4;
+    }
+
+    //zad 3
+    public static void sortowanie(double x, double y, double z){
+        if(x>=y){
+            if(x>=z){
+                if (y>=z){
+                    System.out.println(x+" "+y+" "+z);
+                }else{System.out.println(x+" "+z+" "+y);}
+            }else{
+                System.out.println(z+" "+x+" "+y);
+            }
+        } else if (y>=z) {
+            if (x>=z){
+                System.out.println(y+" "+x+" "+z);
+            }else{System.out.println(y+" "+z+" "+x);}
+
+        }else {System.out.println(z+" "+y+" "+x);}
+    }
+
+    //zad 4
+    public static void pogodaBool(boolean bus,boolean sun){
+        if(bus){
+            System.out.println("Dostaniesz się na uczelnie");
+        }else {System.out.println("Nie dostaniesz się na uczelnię");}
+        if(sun){
+            System.out.println("Miłego dnia " +
+                    "i pięknej pogody");
+        }else if(bus){System.out.println("Weź parasol");}
+    }
+    public static void pogoda(boolean bus,boolean sun){
+        if(bus==true && sun==true){
+            System.out.println("Dostaniesz się na uczelnie");
+            System.out.println("Miłego dnia i pięknej pogody");
+        }else {System.out.println("Nie dostaniesz się na uczelnię");}
+        if(sun){
+            System.out.println("Miłego dnia " +
+                    "i pięknej pogody");
+        }else if(bus){System.out.println("Weź parasol");}
+    }
     }
 
